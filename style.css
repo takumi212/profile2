@@ -12,6 +12,8 @@ padding: 0;
 
 
 
+
+
 /* パソコン版 */
 
 @media screen and (min-width: 768px) {
@@ -30,7 +32,7 @@ body {
 
     overscroll-behavior-y: none; /* 縦方向のオーバースクロールを無効にする */
     
-   
+
 }
 
 
@@ -436,6 +438,9 @@ footer {
 
     margin: 0;
     padding: 0;
+
+    margin-bottom: auto;
+
 
 }
 
@@ -847,6 +852,9 @@ header,.title {
     border-radius: 50px;
     border: 10px solid #00cc00;
 
+    position: relative;
+    bottom: 150px;
+    left: 30px;
 
 
 }
@@ -1051,6 +1059,8 @@ footer {
 
     bottom: 0; /* 下端に固定 */
     /* position: fixed; 固定位置に設定 */
+
+    width: 100%;
 
     
 
