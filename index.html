@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is a portfolio showcasing my projects and skills in web development.">
+    <title>profile2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://unpkg.com/vue@3"></script>
+    <script type="module" src="main.js"></script>
+</head>
+<body id="app"> 
+    <div class="wrap">
+        <header>
+            <p class="nav-outline" @mouseover="isHovered = true" @mouseleave="isHovered = false" :class="{ 'shake': isHovered }">　こちらのポートフォリオは、私が転職活動の際にご提出させていただくために制作しております。<br>こちらのポートフォリオのプログラミング言語としては、HTML、CSS、JavaScript（Vue.js）<br>を使用しており、こちらではbootstrap等を使用せずに制作しました。今後から貴社でのご業務<br>に取り組ませていただくことを心より願っております。よろしくお願いします。<br><br><span>※こちらのポートフォリオはMacbookPro13とiphoneXRの画面のサイズに対応しています。</span></p>
+            <p class="title">profile2</p>
+            <ul class="navthree">
+                <!-- ポートフォリオについての説明をpタグを用いて書く。 -->
+                <li><a class="one-more" href="https://takumi212.github.io/myprofile/"><span>前のページ</span></a></li>
+                <li><a href="#navstu">学生時代</a></li>
+                <li><a href="#navtra">トレーニング</a></li>
+                <li><a href="#navdre">夢</a></li>
+                <!-- <li><a class="career" href=""><span>次のページ</span></a></li> -->
+            </ul>
+        </header>
+
+
+
+        <!-- <div class="stu2"> -->
+            <p name="navstu" id="navstu">学生時代</p>
+            <p class="studentexplain" id="slide-in" :class="{ show: showSlideIn }">　こちらは私がこれから社会に出て働くことを踏まえて、静岡県の駿府公園で撮った<br>写真です。私はこのときに大学生、社会人の方々と一緒に静岡県の駿府公園にお花見<br>をしていました。この頃は、2020年3月にコロナウイルスが蔓延し始めた頃でした。<br>生活を送っている中で人と人が交流をする機会が少なくなってしまい、寂しく感じる<br>ことが多かったのですが、私の友人の方々との交流を交わすことによって充実した時<br>間を過ごせました。</p>
+            <img src="cherry.jpg" class="stuimg" alt="桜で撮った写真" width="720" height="480">
+            <p class="student-me">　私は静岡英和学院大学を卒業致しました。大学生時代にはエンジニ<br>アとして業務に取り組むためにパソコンの学習をしておりました。私<br>は大学を卒業した後に東京都あるいは神奈川県のエリアでお仕事先を<br>探して、IT企業に入社することを決めていました。私はWebやシステ<br>ムの構築に取り組むエンジニアになりたいと思っています。</p>
+
+        <!-- </div> -->
+        <div class="tra2">
+            <p name="navtra" id="navtra">トレーニング</p>
+            <p class="tra-outline">　私は16歳の頃から23歳までにかけてトレーニングをしていました。忙しい時期以外は<br>一週間につき、二回か三回、トレーニングのお部屋を利用して自身の鍛錬に打ち込んでい<br>ました。トレーニングを継続的に行うことによって、周囲の方々から認めていただけたり、<br>自信を持つことができたりするようになりました。将来は達人のレベルまでトレーニン<br>グを上達させたいと考えており、トレーニングによって健康であることを目指しています。<br>また、人間関係も良好に築いていけたら幸いに思います。</p>
+            <p class="rizapexplain" id="slide-in2" :class="{ 'show': showSlideIn2 }">　こちらは[ライザップ牛サラダ]と言います。高い<br>たんぱくと糖質が低いボリュームいっぱいのサラダ<br>です。牛肉だけでなく、鶏肉・ブロッコリー・半熟<br>玉子とバランスよくたんぱく質を摂取できます。私<br>はこちらの商品をトレーニング後によく食べていま<br>した。</p>
+            <img src="protein.jpg" alt="プロテインの画像" width="500" height="400">
+        </div>
+
+        
+
+        <div class="dre2">
+            <p name="navdre" id="navdre">ビジョン</p>
+            <p class="seaexplain" id="slide-in3" :class="{ 'show': showSlideIn3 }">　私はIT企業にて、私自身が持つ技術を駆使して様々な業務を遂行していきたく思います。私はエンジニアとして保険系、webの構築、環境構築といった業務に携わらせていただいた機会があります。どの業務も私にとって、望ましい体験をすることができたり成長することができたりする有意義な機会でした。私は、同僚の方々と切磋琢磨いただきながら仕事を進めたり、お客様方にご納得いただける開発ができるエンジニアになりたいと思っております。特には、webやシステムの構築を行い、IT企業にて必要とされるエンジニアになりたく思います。</p>
+            <div id="image3">
+                <img src="sea.jpg" alt="沖縄の海" width="800" height="400">
+            </div>
+            <div class="dre2ul">
+                <ul>
+                    <li>扱いたい言語とツール</li>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Excel</li>
+                </ul>
+            </div>
+        </div>  
+
+        <footer>
+            <h2>@Takumi.profile2</h2>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+
