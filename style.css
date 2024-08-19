@@ -1,0 +1,1151 @@
+style.css
+
+
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+margin: 0;
+padding: 0;
+}
+
+
+
+/* パソコン版 */
+
+@media screen and (min-width: 768px) {
+
+body {
+    font-family: "sans-serif";
+    background-color: #B0DAFF;
+
+    height: 200%;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+
+    overscroll-behavior-y: none; /* 縦方向のオーバースクロールを無効にする */
+    
+   
+}
+
+
+html {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+a {
+    text-decoration: none;
+
+    list-style-type: circle;
+
+}
+
+.wrap {
+    overflow: hidden;
+
+}
+
+
+
+header {
+    text-align: center;
+    background-color: #B9E9FC;
+
+    height: 300px;
+    width: 100%;
+
+
+    float: left;
+
+    margin-bottom: 50px;
+
+
+
+}
+
+.nav-outline {
+
+    /* margin-right: 20px auto; */
+
+    padding: 0.5em;
+    color: #494949;/*文字色*/
+    background: #fffaf4;/*背景色*/
+    border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+
+    position: absolute;
+    left: 20px;
+
+    font-size: 10px;
+
+
+    line-height: 1.5;
+
+    
+}
+
+.nav-outline span {
+    font-weight: bold;
+    
+}
+
+
+
+
+
+
+
+
+header,.title {
+    font-size: 75px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+
+
+
+
+    
+}
+
+.title {
+    display: block;
+
+    text-align: center;
+
+}
+
+
+
+
+.navthree {
+    text-align: right;
+    position: absolute;
+    right: 50px;
+    font-size: 25px;
+    text-align: left;
+    font-weight: bold;
+
+
+}
+
+
+
+
+.navthree li:nth-child( 1 ) {
+
+
+}
+
+.navthree li:nth-child( 1 ) span {
+    color: yellow;
+
+}
+
+.one-more {
+  
+}
+
+
+.stu2 {
+    height: 700px;
+    width: 100%;
+    
+    position: relative;
+
+    margin: auto;
+
+    
+
+}
+
+#navstu {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+
+    margin-bottom: 100px;
+
+   
+
+}
+
+.studentexplain {
+    position: absolute;
+    left: 150px;
+    top: 540px;
+    z-index: 1;
+    background: blue;
+    color: yellow;
+    border-radius: 10px;
+    opacity: 0.5;
+    /* ここから下のコードは書き直しが必要かも */
+    transition: transform 1s ease-in-out;
+    transform: translateX(-100%);
+}
+
+
+.stuimg {
+    
+    border-radius: 50px 30px;
+
+
+    position: absolute;
+    left: 80px;
+    top: 600px;
+
+    padding: 5px;
+    border: 9px solid green;
+
+
+
+}
+
+
+
+.student-me {
+    position: relative;
+    /* top: 100px; */
+
+    /* bottom: 50px; */
+    left: 900px;
+
+
+}
+
+
+
+
+
+
+
+.tra2 {
+
+    margin-top: 570px;
+    height: 700px;
+
+    padding-bottom: 100px;
+
+
+
+}
+
+
+/* ❗️ここをいずれ直す */
+
+.tra2::before {
+    /* content: "テキストを追加"; */
+    display: block;
+    background-size: cover;
+
+}
+
+.tra2 img {
+    border-radius: 50px;
+    
+    float: right;
+
+    border: 10px solid #00cc00;
+
+    position: relative;
+    right: 30px;
+
+    top: 100px;
+
+
+   
+}
+
+
+
+
+
+.tra2 #navtra {
+    text-align: center;
+
+    /* margin-top: 150px; */
+
+    padding-top: 50px;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+
+    
+}
+
+.tra-outline {
+    text-align: left;
+    position: absolute;
+
+    bottom: -700px;
+    left: 70px;
+
+    
+
+    
+}
+
+
+
+
+
+
+.rizapexplain {
+    position: absolute;
+    right: 80px;
+
+    top: 1300px;
+    
+    color: yellow;
+    background: blue;
+    opacity: 0.5;
+    border-radius: 10px;
+
+    z-index: 1;
+}
+
+
+.dre2 {
+    height: 700px;
+
+
+}
+
+.dre2 #navdre {
+    
+
+    padding-left: 0px;
+
+    margin-top: -100px;
+
+    text-align: center;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+
+
+
+}
+
+.seaexplain {
+    /* margin-left: 250px; */
+    position: relative;
+    top: 48px;
+    right: -505px;
+
+    width: 27%;
+    background: blue;
+    color: white;
+    border-radius: 10px;
+    /* opacity: 0.5; */
+
+    z-index: 1;
+
+    
+    
+}
+
+.dre2 img {
+    padding: 30px 170px;
+    border-radius: 9px;
+
+    margin: 2em 2em;
+    background: #d6ebff;
+    border: dashed 2px white;
+
+    position: relative;
+    bottom: 170px;
+
+    
+}
+
+.dre2ul {
+
+    position: absolute;
+    
+    bottom: -1780px;
+    /* top: 500px; */
+    z-index: 2;
+
+
+    top: 2000px;
+
+
+    
+
+
+}
+
+
+.dre2 li {
+    text-align: left;
+    /* padding-left: 1100px; */
+    position: relative;
+    bottom: -150px;
+
+    top: 50px;
+    left: 1050px;
+    /* left: 1070px; */
+    list-style: inside;
+
+
+    /* display: none; */
+
+
+
+
+
+}
+
+
+
+.dre2 li:first-child {
+    color: yellow;
+    font-size: 35px;
+
+    list-style: none;
+
+    
+}
+
+
+
+
+
+
+footer {
+    height: 70px;
+    background-color: #DAF5FF;
+    display: grid;
+    place-items: center;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+
+/* jQUeryによって出現のコードを制作中 */
+#visible {
+    height: 1000px;
+}
+
+
+
+
+
+#image3 {
+    /* その他のスタイル */
+    z-index: 1;
+}
+
+
+
+
+
+#slide-in {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+  
+#slide-in.show {
+    opacity: 0.5;
+    transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
+
+#slide-in2 {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s, transform 1s;
+}
+
+#slide-in2.show {
+    opacity: 0.5;
+    transform: translateX(0);
+}
+
+
+
+#slide-in3 {
+
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+   
+
+}
+  
+#slide-in3.show {
+    opacity: 0.5;
+    transform: translateX(0);/* 現在の位置にスライド */
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* スマホ版 */
+
+@media screen and (max-width: 767px) {
+
+
+body {
+    font-family: "sans-serif";
+    background-color: #B0DAFF;
+
+    height: 100%;
+    width: 414px;
+
+    margin: 0 auto;
+    padding: 0 auto;
+
+
+
+    overflow-x: hidden;
+    overscroll-behavior-y: none; /* 縦方向のオーバースクロールを無効にする */
+    
+
+}
+
+
+html {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+a {
+    text-decoration: none;
+
+    list-style-type: circle;
+
+}
+
+.wrap {
+    overflow: hidden;
+
+}
+
+header {
+    text-align: center;
+    background-color: #B9E9FC;
+
+    height: 300px;
+    width: 414px;
+
+
+    float: left;
+
+    margin-bottom: 50px;
+
+    overflow-x: hidden;
+   
+
+}
+
+.nav-outline {
+    font-size: 5px;
+
+    /* letter-spacing: -1px; */
+
+    text-transform: lowercase;
+
+
+
+
+    color: #494949;/*文字色*/
+    background: #fffaf4;/*背景色*/
+    border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+
+    position: absolute;
+    /* left: 20px; */
+    
+    text-align: center;
+
+    margin-bottom: 170px;
+
+    /* margin-top: -30px; */
+
+    line-height: 1.2;
+
+    white-space: normal; 
+    /* 改行を無効にする */
+
+
+
+    
+}
+
+
+.nav-outline span {
+    font-weight: bold;
+    
+}
+
+header,.title {
+    font-size: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+
+
+
+
+    
+}
+
+.title {
+    display: block;
+
+    text-align: center;
+
+}
+
+
+
+
+.navthree {
+    /* text-align: right; */
+    position: absolute;
+    right: 50px;
+    top: 220px;
+    font-size: 10px;
+    text-align: left;
+    font-weight: bold;
+
+    display: flex;
+
+    /* margin-right: 60px; */
+    /* margin-left: 20px; */
+
+
+
+    letter-spacing: 15px;
+
+
+
+}
+
+
+
+
+.navthree li:nth-child( 1 ) {
+
+
+}
+
+.navthree li:nth-child( 1 ) span {
+    color: yellow;
+
+}
+
+.one-more {
+  
+}
+
+
+.stu2 {
+    /* height: 300px; */
+    width: 100%;
+    
+    position: relative;
+
+    margin: auto;
+
+    
+
+}
+
+#navstu {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+
+    position: relative;
+    bottom: 40px;
+
+
+
+
+
+
+   
+}
+
+.studentexplain {
+    /* position: relative;
+    top: 50px;
+    left: 60px; */
+
+
+    /* top: 500px; */
+
+
+    z-index: 1;
+    
+    background: blue;
+    color: yellow;
+    border-radius: 10px;
+    opacity: 0.5;
+
+    width: 57%;
+
+    
+
+    position: relative;
+    left: 80px;
+
+    bottom: 40px;
+
+    
+}
+
+
+.stuimg {
+    
+    border-radius: 50px 30px;
+
+
+    /* position: absolute; */
+    /* left: 80px;
+    top: 600px; */
+
+    padding: 5px;
+    border: 9px solid green;
+
+    width: 315px;
+    height: 216px;
+
+
+
+    opacity: 1;
+    transition: opacity 1s;
+
+    position: relative;
+    bottom: 70px;
+
+    left: 30px;
+}
+
+
+
+
+.student-me {
+    /* position: relative; */
+    /* top: 100px; */
+
+    /* bottom: 50px; */
+    /* left: 900px; */
+
+    font-size: 10px;
+
+    text-align: left;
+
+    position: relative;
+    bottom: 70px;
+    left: 40px;
+
+
+}
+
+
+
+
+
+.tra2 {
+
+    /* margin-top: 570px; */
+    /* height: 700px; */
+
+    padding-bottom: 100px;
+
+   
+
+
+
+}
+
+
+
+
+.tra2::before {
+    /* content: "テキストを追加"; */
+    display: block;
+    background-size: cover;
+
+}
+
+.tra2 img {
+    height: 214px;
+    width: 324px;
+    border-radius: 50px;
+    border: 10px solid #00cc00;
+
+
+
+}
+
+
+
+
+
+.tra2 #navtra {
+    text-align: center;
+
+    /* margin-top: 150px; */
+
+    /* padding-top: 50px; */
+
+
+
+    font-weight: bold;
+
+    position: relative;
+    bottom: 40px;
+
+
+    
+}
+
+.tra-outline {
+    text-align: center;
+    /* position: absolute; */
+
+    /* bottom: -630px; */
+
+    /* left: 10px; */
+    
+
+    font-size: 10px;
+
+    display: block;
+
+    position: relative;
+
+    top: 440px;
+
+
+    
+
+
+}
+
+
+
+.rizapexplain {
+    
+    position: relative;
+    bottom: 130px;
+    left: 100px;
+
+
+    /* top: 1100px; */
+    /* left: 100px; */
+    
+    color: yellow;
+    background: blue;
+    opacity: 0.5;
+    border-radius: 10px;
+
+    z-index: 1;
+
+    text-align: center;
+
+    display: flex;
+
+    width: 200px;
+}
+
+
+.dre2 {
+    
+
+
+}
+
+.dre2 #navdre {
+    
+
+    /* padding-left: 0px; */
+
+    /* margin-top: -100px; */
+
+    text-align: center;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    position: relative;
+    bottom: 150px;
+
+
+
+
+}
+
+.seaexplain {
+    /* margin-left: 250px; */
+    position: relative;
+    bottom: 140px;
+    left: 110px;
+    width: 200px;
+    background: blue;
+    color: white;
+    border-radius: 10px;
+    opacity: 0.5;
+
+    z-index: 1;
+
+    
+
+
+    
+    
+}
+
+.dre2 img {
+    padding: 30px;
+    border-radius: 9px;
+
+
+    background: #d6ebff;
+    border: dashed 2px white;
+
+    width: 80%;
+    height: 150px;
+
+    margin-left: 10px;
+
+    position: relative;
+    bottom: 300px;
+   
+
+    
+}
+
+.dre2ul {
+
+    /* position: absolute; */
+    
+    /* bottom: -1780px; */
+    /* top: 500px; */
+    z-index: 2;
+
+    /* margin-top: 100px; */
+
+    position: relative;
+    bottom: 170px;
+    
+   
+
+
+
+}
+
+
+.dre2 li {
+    text-align: left;
+    /* padding-left: 1100px; */
+    /* position: relative; */
+    /* bottom: -150px; */
+
+    /* top: 50px; */
+    
+    margin-left: 40px;
+    /* left: 1050px; */
+    /* left: 1070px; */
+    list-style: inside;
+
+
+}
+
+
+
+.dre2 li:first-child {
+    color: yellow;
+    font-size: 35px;
+
+    list-style: none;
+
+    
+}
+
+
+
+
+
+
+footer {
+    height: 70px;
+    background-color: #DAF5FF;
+    display: grid;
+    place-items: center;
+
+
+    bottom: 0; /* 下端に固定 */
+    /* position: fixed; 固定位置に設定 */
+
+    
+
+}
+
+
+
+
+
+/* jQUeryによって出現のコードを制作中 */
+#visible {
+    height: 1000px;
+}
+
+#image2 {
+    /* display: none; */
+    /* その他のスタイル */
+    /* height: 343px; */
+    width: 224px;
+
+    position: relative;
+    bottom: 160px;
+    left: 30px;
+
+}
+
+
+#image3 {
+    /* display: none; */
+    /* その他のスタイル */
+    z-index: -1;
+
+
+    position: relative;
+    top: 100px;
+
+    
+
+   
+    /* height: 224px; */
+}
+
+
+
+
+
+#slide-in {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+  
+
+#slide-in.show {
+    opacity: 0.5;
+    transform: translateX(0);
+}
+
+
+
+
+
+#slide-in2 {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s, transform 1s;
+}
+
+#slide-in2.show {
+    opacity: 0.5;
+    transform: translateX(0);
+}
+
+
+
+#slide-in3 {
+
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+   
+
+}
+  
+#slide-in3.show {
+    opacity: 0.5;
+    transform: translateX(0); /* 現在の位置にスライド */
+  
+}
+
+
+.unnecessary-element {
+    display: none; /* 不要な要素を非表示にする */
+}
+
+
+
+}
