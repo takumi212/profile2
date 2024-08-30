@@ -74,6 +74,143 @@ header {
 
 }
 
+
+
+
+
+
+
+@keyframes js-accordion--anime__opend {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes js-accordion--anime__closed {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+  @keyframes accordion-open {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 500px; /* 最大高さは内容に合わせて調整 */
+    opacity: 1;
+  }
+}
+
+/* アコーディオンが閉じたときのアニメーション */
+@keyframes accordion-close {
+  from {
+    max-height: 500px;
+    opacity: 1;
+  }
+  to {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+.accordion-container {
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: column; /* 縦に並べる */
+    align-items: center; /* 中央揃え */
+
+    width: 100%; /* 幅を親に合わせる */
+    height: 100%;
+
+}
+
+
+.js-accordion {
+    background-color: #fffaf4;
+    border-top: solid 5px #ffaf58;
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+    border-radius: 2px;
+    max-width: 250px; /* 幅を小さく調整 */
+    position: relative; /* 相対位置を指定 */
+    right: 300px;
+    top: 10px;
+
+}
+  
+  
+  .js-accordion--trigger {
+    overflow: hidden; /* 内容がはみ出ないようにする */
+    font-size: 14px; /* ボタンの文字サイズを調整 */
+    padding: 10px 15px; /* パディングを小さく調整 */
+    background-color: #f1f1f1; /* ボタンの背景色を設定 */
+    border: none; /* ボタンの枠線を削除 */
+    cursor: pointer; /* カーソルをポインタに設定 */   
+ 
+    
+  }
+  
+
+  .js-accordion--target {
+    overflow: hidden;
+    animation: accordion-close 0s linear forwards; /* 閉じるアニメーションの設定 */
+    transition: max-height 1s linear; /* スムーズなトランジション */
+
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 10px; /* 文字サイズを小さく調整 */
+
+
+  }
+
+
+  
+  .js-accordion--target._state-open {
+    max-height: 500px; /* 開いた状態での最大高さ */
+    opacity: 1; /* 開いた状態での透明度 */
+    animation: accordion-open 1s ease forwards; /* 開くアニメーションの設定 */
+
+
+
+  }
+
+  .js-accordion--target._state-closing {
+    animation: accordion-close 1s ease forwards; /* 閉じるアニメーションの設定 */
+
+
+
+  }
+
+
+
+
+
+
+
+.title {
+    position: relative;
+    left: -565px;
+
+    text-align: center; /* 文字を中央に配置 */
+
+}
+
+
+
 .nav-outline {
 
     /* margin-right: 20px auto; */
@@ -121,12 +258,10 @@ header,.title {
     
 }
 
-.title {
-    display: block;
 
-    text-align: center;
 
-}
+
+
 
 
 
@@ -210,8 +345,7 @@ header,.title {
     padding: 5px;
     border: 9px solid green;
 
-
-
+    opacity: 0;
 }
 
 
