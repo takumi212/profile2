@@ -155,7 +155,7 @@ header {
   .js-accordion--trigger {
     overflow: hidden; /* 内容がはみ出ないようにする */
     font-size: 15px; /* ボタンの文字サイズを調整 */
-    padding: 30px 15px; /* パディングを小さく調整 */
+    padding: 25px 10px; /* パディングを小さく調整 */
     background-color: #f1f1f1; /* ボタンの背景色を設定 */
     border: none; /* ボタンの枠線を削除 */
     cursor: pointer; /* カーソルをポインタに設定 */   
