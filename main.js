@@ -7,12 +7,16 @@
 
 
 
+
 const app = Vue.createApp({
   data: () => ({ 
     showSlideIn: false, 
     showSlideIn2: false,
-    showSlideIn3: false 
+    showSlideIn3: false,
+    activeAccordion: null, // アコーディオンの状態を管理するデータ
+    closingAccordion: null // アコーディオンが閉じる際の状態を管理
   }),
+
 
   methods: {
     handleScroll() {
@@ -56,8 +60,14 @@ const app = Vue.createApp({
         thirdImage.style.opacity = this.showSlideIn3 ? 1 : 0;
         thirdImage.style.transition = 'opacity 1s ease-in-out'; // ゆっくりと表示
       }
-    }
-  },
+    },
+
+
+  toggleAccordion(index) {
+    this.activeAccordion = this.activeAccordion === index ? null : index;
+  }
+},
+
 
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
@@ -68,5 +78,55 @@ const app = Vue.createApp({
     window.removeEventListener('scroll', this.handleScroll);
   }
 });
+
+
+
+
+
+
+
+
+
+app.component('js-accordion', {
+  template: `
+    <div class="js-accordion">
+      <button class="js-accordion--trigger" type="button" :class="{ '_state-open': isActive }" @click="toggle">
+        <slot name="title"></slot>
+      </button>
+      <div class="js-accordion--target" 
+           :class="{ '_state-open': isActive, '_state-closing': isClosing }" 
+           @animationend="handleAnimationEnd">
+        <slot name="body"></slot>
+      </div>
+    </div>
+  `,
+  props: ['index'],
+  computed: {
+    isActive() {
+      return this.$parent.activeAccordion === this.index;
+    },
+    isClosing() {
+      return this.$parent.closingAccordion === this.index;
+    }
+  },
+  methods: {
+    toggle() {
+      if (this.isActive) {
+        this.$parent.closingAccordion = this.index;
+        this.$parent.activeAccordion = null;
+      } else {
+        this.$parent.activeAccordion = this.index;
+        this.$parent.closingAccordion = null;
+      }
+    },
+    handleAnimationEnd() {
+      if (this.isClosing) {
+        this.$parent.closingAccordion = null;
+      }
+    }
+  }
+});
+
+
 
 app.mount('#app');
