@@ -7,9 +7,10 @@
 
 
 
-
 const app = Vue.createApp({
   data: () => ({ 
+    currentDate: '', // 現在の日付
+    currentTime: '', // 現在の時間
     showSlideIn: false, 
     showSlideIn2: false,
     showSlideIn3: false,
@@ -63,15 +64,32 @@ const app = Vue.createApp({
     },
 
 
+    updateTime() {
+      const now = new Date();
+      const optionsDate = { year: 'numeric', month: '2-digit', day: '2-digit' };
+      this.currentDate = now.toLocaleDateString('ja-JP', optionsDate); // 日本語形式の日付
+      this.currentTime = now.toTimeString().split(' ')[0]; // HH:MM:SS 形式の時間
+    },
+
+    startClock() {
+      this.updateTime();
+      setInterval(this.updateTime, 1000); // 1秒ごとに更新
+    },
+
+
+
   toggleAccordion(index) {
     this.activeAccordion = this.activeAccordion === index ? null : index;
   }
 },
 
 
+
+
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
     this.handleScroll(); // 初期表示チェック
+    this.startClock(); // 時計の開始
   },
 
   beforeUnmount() {
@@ -126,6 +144,25 @@ app.component('js-accordion', {
     }
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
