@@ -9,10 +9,24 @@
     <script src="https://unpkg.com/vue@3"></script>
     <script type="module" src="main.js"></script>
 </head>
-<body id="app"> 
+<body id="app">
     <div class="wrap">
         <header>
-            <p class="nav-outline" @mouseover="isHovered = true" @mouseleave="isHovered = false" :class="{ 'shake': isHovered }">　こちらのポートフォリオは、私が転職活動の際にご提出させていただくために制作しております。<br>こちらのポートフォリオのプログラミング言語としては、HTML、CSS、JavaScript（Vue.js）<br>を使用しており、こちらではbootstrap等を使用せずに制作しました。今後から貴社でのご業務<br>に取り組ませていただくことを心より願っております。よろしくお願いします。<br><br><span>※こちらのポートフォリオはMacbookPro13とiphoneXRの画面のサイズに対応しています。</span></p>
+            <div class="accordion-container">
+                <js-accordion :index="0">
+                    <template v-slot:title>転職活動並びにポートフォリオについてのご説明（クリックすると表示されます。）</template>
+                    <template v-slot:body>
+                    <p>こちらのポートフォリオは、私が転職活動の際にご提出させていただくために制作しております。<br>こちらのポートフォリオのプログラミング言語としては、HTML、CSS、JavaScript（Vue.js）<br>を使用しており、こちらではbootstrapを使用することなく制作しました。今後から貴社でのご業務<br>に取り組ませていただくことを心より願っております。よろしくお願いします。<br><br><span>※こちらのポートフォリオはMacbookPro13とiphoneXRの画面のサイズに対応しています。</span></p>
+                    </template>
+                </js-accordion>
+                <js-accordion :index="1">
+                    <template v-slot:title>ポートフォリオの詳細についての説明文（クリックすると表示されます。）</template>
+                    <template v-slot:body>
+                    <p>まず初めに、こちらのアコーディオン、画面をスクロールしている際の青色い枠の文章とお写真のアニメーション、右下のデジタル時計についてはVue.jsをお使いさせていただいております。</p>
+                    </template>
+                </js-accordion>
+            </div>
+            
             <p class="title">profile2</p>
             <ul class="navthree">
                 <!-- ポートフォリオについての説明をpタグを用いて書く。 -->
