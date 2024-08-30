@@ -140,7 +140,7 @@ header {
 
 .js-accordion {
     background-color: #fffaf4;
-    border-top: solid 5px #ffaf58;
+    border: solid 5px #ffaf58;
     border-style: solid;
     border-width: 1px 1px 0 1px;
     border-radius: 2px;
@@ -154,8 +154,8 @@ header {
   
   .js-accordion--trigger {
     overflow: hidden; /* 内容がはみ出ないようにする */
-    font-size: 14px; /* ボタンの文字サイズを調整 */
-    padding: 10px 15px; /* パディングを小さく調整 */
+    font-size: 15px; /* ボタンの文字サイズを調整 */
+    padding: 30px 15px; /* パディングを小さく調整 */
     background-color: #f1f1f1; /* ボタンの背景色を設定 */
     border: none; /* ボタンの枠線を削除 */
     cursor: pointer; /* カーソルをポインタに設定 */   
@@ -577,6 +577,51 @@ footer {
 
 
 }
+
+
+
+
+
+.clock {
+    font-family: 'Arial', sans-serif;
+
+    text-align: right;
+    display: block;
+    position: absolute;
+    right: 20px;
+}
+
+
+
+.clock-display {
+    background-color: #FFFFE0;
+    padding: 10px 15px;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.date-display {
+    font-size: 20px;
+    
+    text-align: center;
+}
+
+.time-display {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    text-align: center;
+}
+
+
+
+
+
+
+
+
 
 
 
