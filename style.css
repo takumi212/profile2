@@ -142,7 +142,7 @@ header {
     background-color: #fffaf4;
     border: solid 5px #ffaf58;
     border-style: solid;
-    border-width: 1px 1px 0 1px;
+    border-width: 1px 1px 1px 1px;
     border-radius: 2px;
     max-width: 250px; /* 幅を小さく調整 */
     position: relative; /* 相対位置を指定 */
@@ -844,6 +844,139 @@ header,.title {
     
 }
 
+
+
+
+
+@keyframes js-accordion--anime__opend {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes js-accordion--anime__closed {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+  @keyframes accordion-open {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 200px; /* 最大高さは内容に合わせて調整 */
+    opacity: 1;
+  }
+}
+
+/* アコーディオンが閉じたときのアニメーション */
+@keyframes accordion-close {
+  from {
+    max-height: 200px;
+    opacity: 1;
+  }
+  to {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+.accordion-container {
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: row; /* 縦に並べる */
+    justify-content: center; /* 中央揃え（オプション） */
+
+    box-sizing: border-box; /* パディングやボーダーを含めたサイズ計算 */
+
+    padding: 10px; /* コンテンツのパディングを調整 */
+
+    width: 80%; /* 幅を親に合わせる */
+    height: 20%;
+
+}
+
+
+.js-accordion {
+    background-color: #fffaf4;
+    border: solid 5px #ffaf58;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 2px;
+
+    position: absolute;
+    top: -50px;
+    right: 10px;
+    left: 10px;
+    /* bottom: ; */
+
+    height: 50px;
+    display: none;
+    
+}
+  
+  
+  .js-accordion--trigger {
+    overflow: hidden; /* 内容がはみ出ないようにする */
+    font-size: 20px; /* ボタンの文字サイズを調整 */
+    padding: 5px; /* パディングを小さく調整 */
+    background-color: #f1f1f1; /* ボタンの背景色を設定 */
+    border: none; /* ボタンの枠線を削除 */
+    cursor: pointer; /* カーソルをポインタに設定 */ 
+
+
+
+  }
+  
+
+  .js-accordion--target {
+    overflow: hidden;
+    animation: accordion-close 0s linear forwards; /* 閉じるアニメーションの設定 */
+    transition: max-height 1s linear; /* スムーズなトランジション */
+
+    background-color: #f1f1f1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-size: 20px; /* 文字サイズを小さく調整 */
+    
+
+  }
+
+
+  
+  .js-accordion--target._state-open {
+    max-height: 30px; /* 開いた状態での最大高さ */
+    opacity: 1; /* 開いた状態での透明度 */
+    animation: accordion-open 1s ease forwards; /* 開くアニメーションの設定 */
+
+    font-size: 15px;
+  }
+
+  .js-accordion--target._state-closing {
+    animation: accordion-close 1s ease forwards; /* 閉じるアニメーションの設定 */
+
+    max-height: 20px;
+    font-size: 10px;
+
+  }
+
+
+
+
+
 .title {
     display: block;
 
@@ -1244,6 +1377,59 @@ footer {
     
 
 }
+
+
+
+
+
+
+
+
+
+
+
+.clock {
+    font-family: 'Arial', sans-serif;
+
+    text-align: right;
+    display: block;
+    position: absolute;
+    right: 0px;
+
+    margin-bottom: 140px;
+
+}
+
+
+
+.clock-display {
+    background-color: #FFFFE0;
+    padding: 10px 15px;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.date-display {
+    font-size: 20px;
+    
+    text-align: center;
+}
+
+.time-display {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    text-align: center;
+}
+
+
+
+
+
+
+
 
 
 
