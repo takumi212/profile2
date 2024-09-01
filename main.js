@@ -153,17 +153,4 @@ app.component('js-accordion', {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 app.mount('#app');
