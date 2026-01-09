@@ -18,7 +18,7 @@
                 <js-accordion :index="0">
                     <template v-slot:title>転職活動並びにポートフォリオについてのご説明（クリックすると表示されます。）</template>
                     <template v-slot:body>
-                    <p>こちらのポートフォリオは、私が転職活動の際にご提出させていただくために制作しております。こちらのポートフォリオのプログラミング言語としては、HTML、CSS、JavaScript（Vue.js）を使用しており、こちらではBootstrapを使用することなく制作しました。今後よりご業務に取り組ませていただくことを心より願っております。よろしくお願いします。<br><br><span>※こちらのポートフォリオはMacbookPro13とiphoneXRの画面のサイズに対応しています。</span></p>
+                    <p>こちらのポートフォリオは、私が転職活動の際にご提出させていただくために制作しております。こちらのポートフォリオのプログラミング言語としては、HTML、CSS、JavaScript（Vue.js）を使用しており、こちらではBootstrapを使用することなく制作しました。今後より業務に取り組ませていただくことを心より願っております。よろしくお願いします。<br><br><span>※こちらのポートフォリオはMacbookPro13とiphoneXRの画面のサイズに対応しています。</span></p>
                     </template>
                 </js-accordion>
                 <js-accordion :index="1">
@@ -33,8 +33,8 @@
             <ul class="navthree">
                 <!-- ポートフォリオについての説明をpタグを用いて書く。 -->
                 <li><a class="one-more" href="https://takumi212.github.io/myprofile/"><span>前のページ</span></a></li>
-                <li><a href="#navstu">学生時代</a></li>
-                <li><a href="#navtra">トレーニング</a></li>
+                <li><a href="#navstu">大学生時代</a></li>
+                <li><a href="#navtra">キャリア</a></li>
                 <li><a href="#navdre">ビジョン</a></li>
                 <!-- <li><a class="career" href=""><span>次のページ</span></a></li> -->
             </ul>
@@ -43,16 +43,38 @@
 
 
         <!-- <div class="stu2"> -->
-            <p name="navstu" id="navstu">学生時代</p>
+            <p name="navstu" id="navstu">大学生時代</p>
             <p class="studentexplain" id="slide-in" :class="{ show: showSlideIn }">　こちらは私がこれから社会に出て働くことを踏まえて、静岡県の駿府公園で撮った<br>写真です。私はこのときに大学生、社会人の方々と一緒に静岡県の駿府公園にお花見<br>をしていました。この頃は、2020年3月にコロナウイルスが蔓延し始めた頃でした。<br>生活を送っている中で人と人が交流をする機会が少なくなってしまい、寂しく感じる<br>ことが多かったのですが、私の友人の方々との交流を交わすことによって充実した時<br>間を過ごせました。</p>
             <img src="cherry.jpg" class="stuimg" alt="桜で撮った写真" width="720" height="480">
             <p class="student-me">　私は静岡英和学院大学を卒業致しました。大学生時代にはエンジニ<br>アとして業務に取り組むためにパソコンの学習をしておりました。私<br>は大学を卒業した後に東京都あるいは神奈川県のエリアでお仕事先を<br>探して、IT企業に入社することを決めていました。私はWebやシステ<br>ムの構築に取り組むエンジニアになりたいと思いました。</p>
 
         <!-- </div> -->
         <div class="tra2">
-            <p name="navtra" id="navtra">トレーニング</p>
-            <p class="tra-outline">　私は16歳の頃から23歳までにかけてトレーニングをしていました。忙しい時期以外は<br>一週間につき、二回か三回、トレーニングのお部屋を利用して自身の鍛錬に打ち込んでい<br>ました。トレーニングを継続的に行うことによって、周囲の方々から認めていただけたり、<br>自信を持つことができたりするようになりました。将来は達人のレベルまでトレーニン<br>グを上達させたいと考えており、トレーニングによって健康であることを目指しています。<br>また、人間関係も良好に築いていけたら幸いに思います。</p>
-            <p class="rizapexplain" id="slide-in2" :class="{ 'show': showSlideIn2 }">　こちらは[ライザップ牛サラダ]と言います。高い<br>たんぱくと糖質が低いボリュームいっぱいのサラダ<br>です。牛肉だけでなく、鶏肉・ブロッコリー・半熟<br>玉子とバランスよくたんぱく質を摂取できます。私<br>はこちらの商品をトレーニング後によく食べていま<br>した。</p>
+            <p name="navtra" id="navtra">キャリア</p>
+            <p class="tra-outline" style="z-index: 2;">
+                ■ Bitbyte株式会社（2022年12月〜2023年5月）<br>
+                ・AIシステム／Webシステム開発に関する研修に参加しました。<br>
+                ・使用技術：PHP、GitHub、Linux、SQL、Python、Java、CSS、Excel<br>
+                ↓<br>
+                ■ アシストエンジニアリング株式会社
+                （板前寿司 アクアシティお台場店）（2023年6月〜2023年9月）<br>
+                ・飲食接客業務（調理補助、清掃）に従事しました。<br>
+                ・ITエンジニア研修として、Web構築に関する基礎学習に取り組みました。<br>
+                ・使用技術：HTML、CSS、JavaScript、PHP<br>
+                ↓<br>
+                ■ 株式会社木村ソフト（2023年10月〜2024年3月）<br>
+                ・Web環境構築およびシステム開発業務に従事しました。<br>
+                ・IT系／保険系プロジェクトに参画しました。<br>
+                ・使用技術：HTML、CSS、JavaScript、Java、Excel<br>
+                ↓<br>
+                ■ 就労移行ITスクール（2024年4月〜2024年12月）<br>
+                ・Webおよびシステム開発、事務業務に関する訓練に取り組みました。<br>
+                ・使用技術：HTML、CSS、JavaScript、Vue.js、React.js、Java、Excel、Word<br>
+                ↓<br>
+                ■ ユーシーカード株式会社（2024年12月〜2025年6月）<br>
+                ・事務業務として、データ管理・整理および社内外対応を担当しました。<br>
+                ・使用技術：Excel、Word、PowerPoint、Outlook</p>
+            <p class="rizapexplain" id="slide-in2" :class="{ 'show': showSlideIn2 }">　</p>
             <img src="protein.jpg" alt="プロテインの画像" width="500" height="400">
         </div>
 
