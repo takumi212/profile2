@@ -40,6 +40,7 @@ body {
     padding: 0;
 
     overflow-x: hidden;
+
     
     overscroll-behavior-y: none; /* 縦方向のオーバースクロールを無効にする */
 
@@ -78,7 +79,8 @@ header {
     width: 100%;
 
 
-    float: left;
+
+
 
     margin-bottom: 50px;
 
@@ -160,7 +162,7 @@ header {
     border-radius: 2px;
     max-width: 250px; /* 幅を小さく調整 */
     position: relative; /* 相対位置を指定 */
-    right: 300px;
+    left: -400px;
     top: 10px;
 
 }
@@ -216,10 +218,19 @@ header {
 
 
 .title {
-    position: relative;
-    left: -565px;
 
-    text-align: center; /* 文字を中央に配置 */
+    align-items: center;
+
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+
+
+    
+
 
 }
 
@@ -440,8 +451,8 @@ header,.title {
     text-align: left;
     position: absolute;
 
-    bottom: -700px;
     left: 70px;
+    top: 1330px;
 
     
 
