@@ -355,6 +355,8 @@ header,.title {
     /* ここから下のコードは書き直しが必要かも */
     transition: transform 1s ease-in-out;
     transform: translateX(-100%);
+
+    max-width: 40%;
 }
 
 
@@ -476,6 +478,8 @@ header,.title {
     border-radius: 10px;
 
     z-index: 1;
+
+    max-width: 30%;
 }
 
 
@@ -1113,6 +1117,8 @@ header,.title {
 
     bottom: 40px;
 
+    max-width: 60%;
+
     
 }
 
@@ -1198,8 +1204,10 @@ header,.title {
     border: 10px solid #00cc00;
 
     position: relative;
-    bottom: 150px;
+    bottom: 550px;
     left: 30px;
+
+    
 
 
 }
@@ -1241,7 +1249,8 @@ header,.title {
 
     position: relative;
 
-    top: 440px;
+    top: 360px;
+    
 
 
     
@@ -1254,7 +1263,7 @@ header,.title {
 .rizapexplain {
     
     position: relative;
-    bottom: 130px;
+    bottom: 200px;
     left: 100px;
 
 
@@ -1273,6 +1282,8 @@ header,.title {
     display: flex;
 
     width: 200px;
+
+    max-width: 50%;
 }
 
 
